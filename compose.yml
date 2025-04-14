@@ -1,0 +1,10 @@
+services:
+
+  flask101:
+    build: .
+    container_name: flask101
+    env_file:
+        - app.env
+    ports:
+      - 8888:8888
+    
